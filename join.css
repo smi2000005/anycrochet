@@ -1,0 +1,152 @@
+
+html {
+    scroll-behavior: smooth;
+    accent-color: rgb(45, 60, 97);
+    cursor: none;
+    
+  }
+  
+  body {
+    /*
+      background: rgb(68, 76, 74);
+      background: -moz-linear-gradient(139deg, rgba(150,168,165,1) 26%, rgba(187,200,153,1) 100%);
+      background: -webkit-linear-gradient(139deg, rgba(150,168,165,1) 26%, rgba(187,200,153,1) 100%);
+      background: linear-gradient(139deg, rgba(150,168,165,1) 26%, rgba(187,200,153,1) 100%);
+      filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#96a8a5",endColorstr="#bbc899",GradientType=1);
+      */
+    background-image: url("images/pexels-ksenia-chernaya-5806991.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
+  
+  * {
+    box-sizing: border-box;
+    margin: 0px;
+  }
+  
+  @font-face {
+    font-family: dream-ave;
+    src: url("fonts/Dream-Avenue.ttf");
+  }
+  
+  @font-face {
+    font-family: seasonslight;
+    src: url("fonts/theseasons.otf");
+  }
+  
+  @font-face {
+    font-family: mertelsans;
+    src: url("fonts/MartelSans-Regular.ttf");
+  }
+  
+  .cursor{
+    width: 3rem;
+    height: 3rem;
+    position: relative;
+    border-radius: 50%;
+    transform: translate(-50%, -50%);
+    pointer-events: none;
+    background-color:rgba(43, 82, 134, 0.56) ;
+    z-index: 1;
+   
+  }
+  h1 {
+    font-family: dream-ave;
+    font-size: 3rem;
+    margin-top: 27vh;
+    margin-left: 31vw;
+    color: white;
+  }
+  
+  .tojoin {
+    color: white;
+    background: rgba(255, 255, 255, 0.15);
+    border-radius: 16px;
+    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+    backdrop-filter: blur(5.3px);
+    -webkit-backdrop-filter: blur(4.3px);
+    border: 1px solid rgba(255, 255, 255, 0.3);
+    padding: 7px;
+    width: 40%;
+    height: 40%;
+    box-shadow: 0px 0px 20px 10px rgba(255, 255, 255, 0.362);
+    font-family: seasonslight;
+    padding: 15px;
+    line-height: 2rem;
+    font-size: 1.4rem;
+    margin-top: 1vh;
+    margin-left: 30vw;
+  }
+  
+  .send {
+    width: 10vw;
+    padding: 3px;
+    border-color: transparent;
+    background-color: rgba(255, 255, 255, 0.676);
+    color: rgb(0, 0, 0);
+    font-family: mertelsans;
+    cursor: none;
+  }
+  
+  
+  .send:hover {
+    cursor: none;
+    background-color: rgba(0, 0, 0, 0.665);
+    color: rgb(255, 255, 255);
+    transition-duration: 0.3s;
+    transform-origin: bottom;
+  }
+  
+  .hamburger {
+    color: white;
+    margin-top: -63vh;
+    margin-left: 4vw;
+    font-size: 2rem;
+    position: sticky;
+  
+  }
+  .hamburger:hover{
+    color:rgb(4, 69, 234) ;
+  }
+  a {
+    text-decoration: none;
+    display: block;
+  
+  }
+  
+  .dropdown {
+    padding-left: 1vw;
+    width: fit-content;
+  
+  }
+  
+  .menu {
+    padding-left: 3.3vw;
+  }
+  
+  .items {
+    color: white;
+    font-size: 0.9rem;
+    border-radius: 10px;
+    display: none;
+    font-family: mertelsans;
+    z-index: 1;
+    letter-spacing: 0.3rem;
+    text-align: justify;
+  
+  }
+  
+  .items:hover{
+    color:rgb(4, 69, 234) ;
+  }
+  .dropdown:hover 
+    .items {
+      display: contents;
+      cursor: none;
+      padding: 9px;
+      align-content: justify;
+  
+    }
+  
+  
+  

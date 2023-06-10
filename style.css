@@ -1,0 +1,938 @@
+:root {
+    --title: dream-ave;
+    --headings: metanoia;
+    --text: seasonslight;
+    --slogan: frunchysage;
+    --buttons: mertelsans;
+    --bordercolor: #8F8989;
+    --browntext: #8F8989;
+  
+  }
+  
+  @font-face {
+    font-family: dream-ave;
+    src: url("fonts/Dream-Avenue.ttf");
+  }
+  
+  @font-face {
+    font-family: metanoia;
+    src: url("fonts/Metanoia.ttf");
+  }
+  
+  @font-face {
+    font-family: seasonslight;
+    src: url("fonts/theseasons.otf");
+  }
+  
+  @font-face {
+    font-family: frunchysage;
+    src: url("fonts/Frunchy.ttf");
+  }
+  
+  @font-face {
+    font-family: mertelsans;
+    src: url("fonts/MartelSans-Regular.ttf");
+  }
+  
+  html {
+    scroll-behavior: smooth;
+    cursor: pointer;
+    display: grid;
+  }
+  
+  body {
+    background: rgb(68, 76, 74);
+    background: -moz-linear-gradient(139deg, rgba(150, 168, 165, 1) 26%, rgba(187, 200, 153, 1) 100%);
+    background: -webkit-linear-gradient(139deg, rgba(150, 168, 165, 1) 26%, rgba(187, 200, 153, 1) 100%);
+    background: linear-gradient(139deg, rgba(150, 168, 165, 1) 26%, rgba(187, 200, 153, 1) 100%);
+    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#96a8a5", endColorstr="#bbc899", GradientType=1);
+  
+  }
+  
+  * {
+    cursor:none;
+    overflow-x: hidden;
+    box-sizing: border-box;
+    margin: 0px;
+  
+
+  }
+  
+  
+  
+  ul[role='list'],
+  ol[role='list'] {
+    list-style: none;
+  }
+  
+  
+
+  .cursor{
+    width: 4rem;
+    height: 4rem;
+    position: absolute;
+    border-radius: 50%;
+    transform: translate(-50%, -50%);
+    pointer-events: none;
+    z-index: 1;
+    background-color: #186c235b;
+   
+   
+  }
+  .anycrochet {
+    color: white;
+    font-family: var(--title);
+    text-align: center;
+    font-size: 13rem;
+    font-weight: 100;
+    overflow: hidden;
+  
+  }
+  
+  .welcome {
+    color: white;
+    font-family: var(--buttons);
+    margin-top: 17%;
+    text-align: center;
+    font-size: 1.5rem;
+    z-index: 10000;
+    letter-spacing: 0.6rem;
+    overflow:hidden ;
+  
+  }
+  
+  .slogan {
+ 
+    color: white;
+    font-family: var(--slogan);
+    text-align: center;
+    font-size: 3rem;
+    margin-top: -3%;
+    margin-left: -3vw;
+    z-index: 1;
+    letter-spacing: 0.3rem;
+  
+  }
+  
+  .bg {
+    max-width: 100%;
+    min-width: 100%;
+    max-height: 100vh;
+    min-height: 100vh;
+    size: auto;
+    z-index: -1;
+    position: absolute;
+  
+  }
+  
+  
+  .hamburger {
+    color: white;
+    margin-left: 4vw;
+    font-size: 3rem;
+    
+  
+  }
+  
+  .hamburger:hover {
+    color: rgb(107, 152, 107);
+    cursor: none;
+  }
+ 
+  a {
+    text-decoration: none;
+    display: block;
+    color: #220707;
+    overflow: hidden;
+    
+  }
+  
+  .dropdown {
+    padding-left: 1vw;
+    width: fit-content;
+    position: absolute;
+    margin-top: -44vh;
+    overflow: hidden;
+   
+  }
+
+  
+  .menu {
+    padding-left: 3.3vw;
+  }
+  
+  .items {
+    color: white;
+    font-size: 1.7rem;
+    border-radius: 10px;
+    display: none;
+    font-family: var(--buttons);
+    z-index: 1;
+    letter-spacing: 0.3rem;
+    text-align: justify;
+    overflow: hidden;
+    
+  }
+  
+  .dropdown:hover 
+    .items {
+      display: contents;
+      cursor: none;
+      padding: 9px;
+      align-content: justify;
+  
+    }
+  
+  .items:hover {
+    color: rgb(107, 152, 107);
+  }
+  
+  a:hover {
+    text-decoration: none;
+    cursor: none;
+  }
+  
+  .deco {
+    font-family: var(--title);
+    color: white;
+    margin-top: 46vh;
+    font-size: 7rem;
+    text-align: center;
+  
+  }
+  
+  .abouttext {
+    color: white;
+    font-family: var(--text);
+    font-size: 2.4rem;
+    width: 50%;
+    text-align: justify;
+    margin-left: 25%;
+    margin-top: 3%;
+    background-color: #8F8989;
+    background: rgba(255, 255, 255, 0.15);
+    border-radius: 16px;
+    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+    backdrop-filter: blur(4.3px);
+    -webkit-backdrop-filter: blur(4.3px);
+    border: 1px solid rgba(255, 255, 255, 0.3);
+    padding: 7px;
+  }
+  
+  
+  .two {
+    color: rgba(255, 255, 255, 0.821);
+  }
+  
+  .three {
+    color: rgba(255, 255, 255, 0.673);
+  }
+  
+  .four {
+    color: rgba(255, 255, 255, 0.505);
+  }
+  
+  .five {
+    color: rgba(255, 255, 255, 0.265);
+  }
+  
+  .crocheted {
+    font-family: var(--headings);
+    color: black;
+    font-size: 7rem;
+    padding-left: 10%;
+    padding-top: 5%;
+    padding-bottom: 2%;
+  }
+  
+  .ichi,
+  .ni,
+  .san,
+  .yon,
+  .go,
+  .roku,
+  .shichi,
+  .hachi,
+  .kyu {
+    color: white;
+    font-weight: 70px;
+    border-radius: 20px;
+    font-family: var(--headings);
+    font-size: 3.5rem;
+    width: 40vw;
+    height: 70vh;
+    text-align: center;
+    padding-left: 1/3;
+    
+}
+.bags,
+.flowers,
+.figures,
+.keychains,
+.decorations,
+.accessories,
+.gloves,
+.clothes,
+.mats {
+
+  border-radius: 20px;
+  width: 20vw;
+  height: 50vh;
+  z-index: 1;
+
+}
+
+  
+  .container {
+    align-self: center;
+    
+  }
+  
+  .grp1,
+  .grp2,
+  .grp3 {
+    display: flex;
+  }
+  
+  .bags:hover,
+  .flowers:hover,
+  .figures:hover,
+  .keychains:hover,
+  .decorations:hover,
+  .accessories:hover,
+  .gloves:hover,
+  .clothes:hover,
+  .mats:hover {
+    box-shadow: 0px 0px 20px 10px rgba(255, 255, 255, 0.604);
+    transition-duration: 0.4s;
+  }
+  
+  
+  .explore {
+    margin-left: 50%;
+   
+    
+  
+  }
+  
+  button {
+    width: fit-content;
+    text-align: center;
+    padding: 7px;
+    border-color: transparent;
+    background-color: rgba(255, 255, 255, 0.676);
+    color: rgb(0, 0, 0);
+    font-family: var(--buttons);
+    position: absolute;
+    
+  }
+  
+  button:hover {
+    background-color: rgba(0, 0, 0, 0.665);
+    color: rgb(255, 255, 255);
+    transition-duration: 0.3s;
+    transform-origin: bottom;
+    
+  }
+  
+  .text {
+    color: white;
+    font-family: var(--headings);
+    font-size: 7rem;
+    padding-left: 10%;
+    padding-top: 10%;
+    padding-bottom: 2%;
+    height: fit-content;
+  }
+  
+  .box {
+    background-color: #220707;
+  }
+  
+  .div1,
+  .div2 {
+    color: white;
+    font-family: var(--text);
+    text-align: justify;
+    width: 30vw;
+    padding: 10px;
+    font-size: 2.4rem;
+  
+  }
+  
+  .div1 {
+    margin-left: 10vw;
+    margin-top: 5vh;
+    overflow-y:hidden;
+  }
+  
+  .div2 {
+    margin-left: 56vw;
+    margin-top: -30vh;
+    
+  }
+  
+  .order {
+    margin-left: 10.4vw;
+    margin-top: 3vh;
+  }
+  
+  .orderbox {
+    margin-top: -3.5vh;
+  }
+  
+  .joinus {
+    margin-left: 57vw;
+  }
+  
+  .order,
+  .joinus {
+    color: #220707;
+  
+  }
+  
+  a:hover,
+  .order:hover,
+  .joinus:hover {
+    color: white;
+  
+  
+  }
+  
+  .jointowork {
+    margin-top: 5.8vh;
+  }
+  
+  .text2 {
+    color: white;
+    font-family: var(--headings);
+    font-size: 7rem;
+    padding-left: 10%;
+    padding-top: 5%;
+    padding-bottom: 2%;
+    margin-top: 6vh;
+  }
+  
+  
+  .text3,
+  .text4,
+  .text5 {
+    color: white;
+    font-family: var(--text);
+    text-align: justify;
+    padding: 8px;
+    width: 25vw;
+    height: 40vh;
+    font-size: 2.4rem;
+    border: solid #657a7645;
+    border-radius: 10px;
+    display: flexbox;
+    background-color: #96A8A5;
+  
+  }
+  
+  .text3:hover,
+  .text4:hover,
+  .text5:hover {
+    box-shadow: 0px 0px 20px 10px rgba(105, 158, 141, 0.383);
+    transition-duration: 0.4s;
+  }
+  
+  .text3 {
+    margin-left: 10vw;
+    margin-top: 5vh;
+  }
+  
+  .text4 {
+    margin-left: 40vw;
+    margin-top: -40vh;
+  }
+  
+  .text5 {
+    margin-left: 70vw;
+    margin-top: -40vh;
+  }
+  
+  .footerpic {
+    width: 100%;
+    margin-top: 13vh;
+  }
+  
+  .name {
+    font-family: var(--title);
+    color: white;
+    font-size: 4rem;
+    margin-top: -6vh;
+    margin-left: 2.4vw;
+  
+  }
+  
+  .footerbox {
+    font-family: var(--text);
+    color: white;
+    font-size: 2.4rem;
+  }
+  
+  .special {
+    font-family: var(--buttons);
+    display: inline;
+  }
+  
+  .location {
+    margin-left: 10vw;
+    margin-top: 10vh;
+  }
+  
+  .bh {
+    margin-left: 44vw;
+    margin-top: -25vh;
+  }
+  
+  .social {
+    margin-left: 80vw;
+    margin-top: -17vh;
+  }
+  
+  .gmail,
+  .insta,
+  .wa {
+    width: 5rem;
+    float: left;
+    margin-left: 83vw;
+  }
+  
+  .gmail:hover,
+  .insta:hover,
+  .wa:hover {
+  
+    background-color: #35593c;
+    border-radius: 50%;
+    padding: 7px;
+  
+  }
+  
+  .credit {
+    margin-top: 14vh;
+    text-align: center;
+    color: rgba(89, 88, 87, 0.619);
+  }
+
+
+/* Extra small devices (portrait phones, less than 576px)*/
+@media (max-width: 575.98px) { 
+     
+  *{
+    overflow-x: hidden;
+  }
+  .anycrochet {
+    padding: 0%;
+    color: white;
+    font-family: var(--title);
+    text-align: center;
+    font-size: 6rem;
+    font-weight: 100;
+    
+  
+  }
+  
+  .welcome {
+    padding-top: 100px;
+    color: white;
+    font-family: var(--buttons);
+    position: relative;
+    text-align: center;
+    font-size: 1.5rem;
+    margin-top: 20vh;
+    z-index: 10000;
+    letter-spacing: 0.6rem;
+  
+  
+  }
+  
+  .slogan {
+    font-size: 2rem;
+    margin-top: -6%;
+    margin-left: 11vw;
+
+  
+  }
+  
+  .bg {
+    
+    z-index: -1;
+    position: absolute;
+  
+  }
+  
+  
+  .hamburger {
+    color: white;
+    margin-left: 4vw;
+    margin-top: -1vh;
+    font-size: 3rem;
+  }
+  .deco {
+    margin-top: 55vh;
+    font-size: 4rem;
+
+  }
+  .abouttext{
+    width: 70%;
+    margin-left: 15vw;
+    font-size:2rem ;  
+  }
+  .crocheted{
+    font-size: 4rem;
+    text-align: center;
+    margin: 0%;
+    margin: 0%;
+}
+.ichi,
+  .ni,
+  .san,
+  .yon,
+  .go,
+  .roku,
+  .shichi,
+  .hachi,
+  .kyu {
+    font-size: 3rem;
+    width: 60vw;
+    padding: 0%;
+   
+  }
+.bags,
+.flowers,
+.figures,
+.keychains,
+.decorations,
+.accessories,
+.gloves,
+.clothes,
+.mats
+{
+    width: 60vw;
+    padding: 0%;
+  
+
+
+}
+.container{
+    margin-left: 20%;
+}
+.grp1,.grp2,.grp3{
+    display: block;
+    align-items: center;
+}
+
+button{
+    font-size: 1.5rem;
+    
+}
+.explore{
+    margin-left: 43%;
+}
+.text{
+ font-size:4rem;
+}
+
+.div1{
+    font-size: 2rem;
+    width: 80vw;
+    height: fit-content;
+    overflow-y: hidden;
+}
+.order{
+    margin-top: 3vh;
+}
+
+.text2{
+    font-size: 4rem;
+}
+
+.text3,.text4,.text5{
+    font-size:1rem;
+    
+}
+.grp5{
+    display: block;
+}
+.text5 {
+    margin-left: 70vw;
+    margin-top: -40vh;
+  }
+  
+  .footerpic {
+    width: 100%;
+    margin-top: 3vh;
+  }
+  
+  .name {
+    font-family: var(--title);
+    color: white;
+    font-size: 1rem;
+    margin-top: -2vh;
+    text-align: center;
+   
+  }
+  
+  .footerbox {
+    font-family: var(--text);
+    color: white;
+    font-size: 1rem;
+    margin-top: -10vh;
+  }
+  
+  .special {
+    font-family: var(--buttons);
+    display: inline;
+  }
+  
+  .location {
+    margin-left: 10vw;
+    margin-top: 20vh;
+  
+  }
+  
+  .bh {
+    margin-left: 44vw;
+    margin-top: -14vh;
+  
+  }
+  
+  .social {
+    margin-left: 80vw;
+    margin-top: -10vh;
+  }
+  
+  .gmail,
+  .insta,
+  .wa {
+    width: 3rem;
+    float: left;
+    margin-left: 83vw;
+  }
+
+  
+  .credit {
+    margin-top: 14vh;
+    text-align: center;
+    color: rgba(89, 88, 87, 0.619);
+  }
+ }
+/*
+
+/* Medium devices (tablets, less than 992px)*/
+@media (min-width: 575.99px ) and (max-width: 991.98px ) { 
+     
+  *{
+    overflow-x: hidden;
+  }
+  .anycrochet {
+    padding: 0%;
+    color: rgb(255, 255, 255);
+    font-family: var(--title);
+    text-align: center;
+    font-size: 10rem;
+    font-weight: 100;
+    
+  
+  }
+  
+  .welcome {
+    color: white;
+    font-family: var(--buttons);
+    margin-top: 30%;
+    text-align: center;
+    font-size: 1.5rem;
+    z-index: 10000;
+    letter-spacing: 0.6rem;
+  
+  
+  }
+  
+  .slogan {
+    font-size: 3rem;
+    margin-top: -5%;
+    margin-left: 7vw;
+
+  
+  }
+  
+  .bg {
+    
+    z-index: -1;
+    position: absolute;
+  
+  }
+  
+  
+  .hamburger {
+    color: white;
+    margin-left: 4vw;
+    font-size: 3rem;
+  }
+  .deco {
+    margin-top: 47vh;
+    font-size: 6rem;
+
+  }
+  .abouttext{
+    width: 70%;
+    margin-left: 15vw;
+    font-size:2rem ;  
+  }
+  .crocheted{
+   
+    font-size: 6rem;
+    text-align: center;
+    padding: 0%;
+    padding-top: 40px;
+    margin:0%;
+}
+.ichi,
+  .ni,
+  .san,
+  .yon,
+  .go,
+  .roku,
+  .shichi,
+  .hachi,
+  .kyu {
+    font-size: 3rem;
+    width: 30vw;
+    height: 60vh;
+    padding: 0%;
+    padding-top: 10px;
+    overflow-y: hidden;
+  }
+.bags,
+.flowers,
+.figures,
+.keychains,
+.decorations,
+.accessories,
+.gloves,
+.clothes,
+.mats
+{
+  width: 30vw;
+  height: 60vh;
+  padding: 0%;
+ 
+
+
+}
+.container{
+  margin-top: 5%;
+   margin-left: 35%;
+}
+.grp1,.grp2,.grp3{
+    display: block;
+    align-items: center;
+}
+
+button{
+    font-size: 1rem;
+    
+}
+.explore{
+    margin-left: 43%;
+    margin-top: 5%;
+}
+.text{
+ font-size:6rem;
+ padding-top: 15%;
+}
+
+.div1{
+    font-size: 2rem;
+    width: 80vw;
+  
+}
+.order{
+    margin-top: 3vh;
+
+}
+
+.text2{
+    font-size: 4rem;
+}
+
+.text3,.text4,.text5{
+    font-size:1rem;
+    
+}
+.grp5{
+    display: block;
+}
+.text5 {
+    margin-left: 70vw;
+    margin-top: -40vh;
+  }
+  
+  .footerpic {
+    width: 100%;
+    margin-top: 3vh;
+  }
+  
+  .name {
+    font-family: var(--title);
+    color: white;
+    font-size: 2rem;
+    margin-top: -3vh;
+    text-align: center;
+   
+  }
+  
+  .footerbox {
+    font-family: var(--text);
+    color: white;
+    font-size: 2rem;
+    
+  }
+  
+  .special {
+    font-family: var(--buttons);
+    display: inline;
+  }
+  
+  .location {
+    margin-left: 10vw;
+    margin-top: 20vh;
+  
+  }
+  
+  .bh {
+    margin-left: 44vw;
+    margin-top: -25vh;
+  
+  }
+  
+  .social {
+    margin-left: 80vw;
+    margin-top: -15vh;
+  }
+  
+  .gmail,
+  .insta,
+  .wa {
+    width: 3rem;
+    float: left;
+    margin-left: 83vw;
+  }
+
+  
+  .credit {
+    margin-top: 14vh;
+    text-align: center;
+    color: rgba(89, 88, 87, 0.619);
+  }
+
+}
+
+/*Large devices (desktops, less than 1200px)*/
+@media (max-width: 1199.98px) { 
+
+ }
+
